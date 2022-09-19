@@ -1,0 +1,39 @@
+@media only screen and (max-width: 600px) {
+   
+    
+    section{
+        flex-wrap: wrap;
+        width: 100%;
+        display: flex;
+        left: 20%;
+        right: 20%;
+    }
+
+    main .left-to-right article{
+    border-radius: 20%;
+    padding: 15px;
+
+    }
+
+    .left-to-right:first-child{
+        padding: 40px;
+
+    }
+
+    main section.left-to-right:nth-child(3){
+        padding: 40px;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main section:nth-child(4) article{
+        margin-left: 15%;
+    }
+
+    #send{
+        margin-left: 15%;
+    }
+  }
