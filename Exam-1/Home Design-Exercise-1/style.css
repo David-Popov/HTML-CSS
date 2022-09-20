@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Courgette,sans-serif;
+}
+
+.main-container{
+    height: 90vh;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    border: 2px solid black;
+    text-align: center;
+    align-items: center;
+}
+
+.tittle-container{
+    margin-top: 15px;
+    width: 250px;
+    height: 130px;
+    text-align: right;
+}
+
+
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+.rooms{
+    width: 500px;
+}
+
+.rooms img{
+    width: 500px;
+    height: 350px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.tittle{
+    font-size: 3rem;
+    color: black;
+}
+
+.sub-tittle{
+    color: red;
+    font-size: 1.5rem;
+}
+
+.room-tittle{
+    font-size: 2rem;
+    padding-bottom: 3px;
+    border-bottom: 3px solid red;
+}
+
+.rooms p{
+    font-size: 1.2rem;
+}
+
+.rooms span{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+span i{
+    color: red;
+    margin-left: 10px;
+}
+
+.rooms img,h3,p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
