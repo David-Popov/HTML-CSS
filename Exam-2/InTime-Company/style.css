@@ -1,0 +1,303 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+
+.main-head{
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    position: relative;
+}
+
+nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    min-height: 10vh;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    flex: 0.4 1 10rem;
+    float: right;
+    list-style: none;
+    color: rgb(90, 90, 90);
+}
+
+.logo span{
+    color: rgb(90, 90, 90);
+}
+
+.underline{
+    border-bottom: 4px solid rgb(10, 184, 241);
+}
+
+.logo{
+    flex: 0.5 1 20rem;
+    color: aqua;
+}
+
+.content1{
+    background: url(/images/slide2.jpg);
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.box1{
+    background: rgba(0, 0, 0, 0.6);
+    width: 600px;
+    color: white;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    position: absolute;
+    left: 20%;
+    top: 40%;
+}
+
+.box1 h2{
+    font-size: 3rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.box1 button{
+    background-color: rgb(10, 184, 241);
+    width: 250px;
+    height: 50px;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 10px;
+    margin-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content2{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.box2 h2{
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: rgb(90, 90, 90);
+}
+
+.box2 p{
+    text-align: center;
+    font-size: 1.5rem;
+    color: grey;
+    width: 80%;
+}
+
+.box2 span{
+    border-bottom: 4px solid rgb(10, 184, 241);
+}
+
+.box2 button{
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: rgb(90, 90, 90);
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+.content3{
+    height: 900px;
+    width: 100%;
+    background-color:rgb(236, 236, 236);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.content3 h2{
+    font-size: 3rem;
+    margin: auto;
+    color: rgb(90, 90, 90);
+}
+
+.box3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.content3 span{
+    border-bottom: 4px solid rgb(90, 90, 90);
+}
+
+.card{
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.card img{
+    width: 400px;
+    height: 300px;
+}
+
+.card button{
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: rgb(90, 90, 90);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.content4{
+    width: 100%;
+    height: 250px;
+    background-color: #595959;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.box4{
+    margin-top: 10px;
+}
+
+.box4 h2,h4,button{
+    margin-top: 20px;
+}
+
+.box4 h2{
+    font-size: 2rem;
+}
+
+.box4 input{
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+
+.box4 button{
+    background-color: rgb(10, 184, 241);
+    height: 40px;
+    border-radius: 5px;
+    width: 200px;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+}
+
+::placeholder{
+    color: black;
+}
+
+
+
+.box4 span{
+    border-bottom: 4px solid;
+}
+
+
+.content5{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #4d4d4d;
+}
+
+.box5{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    align-content: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    color: white;
+}
+
+.columns{
+    text-decoration: none;
+}
+
+.columns ul{
+    list-style: none;
+}
+
+.columns ul li{
+    margin-top: 10px;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.columns h4{
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+.columns p{
+    padding: 10px;
+}
+
+.columns a{
+    padding: 10px;
+}
+
+.columns a i{
+    color: white;
+}
+
+.content6{
+    width: 100%;
+    height: 50px;
+    background-color: #333333;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.content6 p{
+    margin-top: 20px;
+    color: white;
+}
+
+.content6 p span{
+    color: rgb(10, 184, 241);
+}
