@@ -6,7 +6,9 @@
     
 }
 
-
+.burger,.menu-check{
+    display: none;
+  }
 
 .main-head{
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
@@ -301,3 +303,122 @@ nav{
 .content6 p span{
     color: rgb(10, 184, 241);
 }
+
+@media only screen and (max-width: 600px) {
+    .content2{
+        height: 600px;
+    }
+
+    .content4{
+        height: 300px;
+    }
+
+    .box4 h4{
+        margin-bottom: 20px;
+    }
+    .card{
+        width: 300px;
+        height: 450px;
+        padding: 10px;
+        position: relative;
+        left: 15%;
+    }
+
+    .card img{
+        width: 300px;
+        height: 150px;
+    }
+
+    .content3{
+        height: 1500px;
+    }
+
+    .box3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    .box1{
+        left: 8%;
+        width: 450px;
+        display: flex;
+        align-items: center;
+    }
+
+    .box1 h2,button{
+        padding: 10px;
+    }
+
+    .box1 h2{
+        font-size: 2rem;
+    }
+
+    .burger{
+        position: relative;
+        display: block;
+      }
+      .burger span{
+        padding: 0.1rem 1rem;
+        background: rgb(90, 90, 90);
+        margin: 0.5rem 0rem;
+        display: block;
+      }
+
+      .nav-links a{
+        color: white;
+        font-size: 24px;
+      }
+      .nav-links{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0%;
+        left: 100%;
+        background: rgb(10, 184, 241);
+        flex-direction: column;
+        align-items: center;
+        transition: transform 1s ease;
+        color: white;
+      }
+
+      .menu-check{
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        transform: translate(5%,-50%);
+        width: 5rem;
+        height: 5rem;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 100;
+        display: block;
+      }
+
+
+
+      .menu-check:checked + .nav-links{
+        transform: translate(-100%);
+      }
+    
+      .menu-check:checked ~ .burger span{
+        background: white;
+      }
+    
+      .menu-check:checked ~ .burger span:nth-child(1){
+        transform: rotate(45deg) translateY(325%);
+      }
+    
+      .menu-check:checked ~ .burger span:nth-child(2){
+        opacity: 0;    
+      }
+    
+      .menu-check:checked ~ .burger span:nth-child(3){
+        transform: rotate(-45deg) translateY(-300%);
+      }
+    }
+  }
+
+  
